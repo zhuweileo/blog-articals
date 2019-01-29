@@ -92,6 +92,8 @@ module.exports = function getIgnore(){
 var getIgnore = require('../getIgnore')
 getIgnore();
 ```
+`#!/usr/bin/env node`的意思
+我们告诉 *nix 系统，JavaScript 文件的解释器应该是 /usr/bin/env node，它查找本地安装的 node。
 
 ## 发布
 
@@ -105,5 +107,5 @@ getIgnore();
 
 [七天学会NodeJS](http://nqdeng.github.io/7-days-nodejs/)
 
-[**Nodejs 开发命令行工具**](https://blog.csdn.net/haokur/article/details/81460973)
+[Nodejs 开发命令行工具](https://blog.csdn.net/haokur/article/details/81460973)
 
