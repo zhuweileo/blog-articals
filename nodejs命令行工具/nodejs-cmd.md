@@ -1,6 +1,10 @@
 # 开发一个nodejs命令行工具
 最近在学习nodejs，在掌握了一些基础知识之后，就想着如何运用它解决一些简单的问题。
 
+## 代码地址
+
+https://github.com/zhuweileo/gitignore-cmd
+
 ## 目标
 平时初始化项目工程的时候，总是需要添加`.gitignore`文件，我之前总是手动复制粘贴一个写好的模板，虽然也不算麻烦，但是作为懒癌晚期，我连复制粘贴也不愿意，于是我就想用nodejs写一个命令行工具，直接输入一个命令，就在当前文件夹内生成`.gitignore`文件。其实就是让nodejs帮你复制粘贴。
 
@@ -10,7 +14,7 @@
 
 ##  主要功能代码
 
-getIgnore.js
+**getIgnore.js**
 
 ```js
 var https = require('https');
@@ -89,11 +93,17 @@ var getIgnore = require('../getIgnore')
 getIgnore();
 ```
 
-
-
 ## 发布
 
 这样这个模块就写好了，可以发布到npm上了。
 
 也可以不发布，在`package.json`文件的同级目录执行`npm install . -g`安装到本地，自娱自乐。
+
+
+
+## 参考
+
+[七天学会NodeJS](http://nqdeng.github.io/7-days-nodejs/)
+
+[**Nodejs 开发命令行工具**](https://blog.csdn.net/haokur/article/details/81460973)
 
